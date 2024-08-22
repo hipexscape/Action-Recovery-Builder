@@ -1,4 +1,4 @@
-name: Recovery Build
+name: PBRP Recovery Build
 
 on:
   workflow_dispatch:
@@ -10,7 +10,7 @@ on:
       DEVICE_TREE_URL:
         description: Device Tree URL
         required: true
-        default: https://github.com/PitchBlackRecoveryProject/android_device_infinix_X6739-pbrp
+        default: https://github.com/hipexscape/recovery_device_xiaomi_sky
       DEVICE_TREE_BRANCH:
         description: Device Tree Branch
         required: true
@@ -18,11 +18,11 @@ on:
       DEVICE_PATH:
         description: Path the device tree should be synced to, relative to source root
         required: true
-        default: device/infinix/X6739
+        default: device/xiaomi/sky
       DEVICE_MAKEFILE:
         description: 'Name of device-specific makefile from tree (format: <PREFIX>_<DEVICE_NAME>)'
         required: true
-        default: pb_X6739
+        default: pb_sky
       BUILD_TARGET:
         type: choice
         description: Partition containing recovery ramdisk
