@@ -1,4 +1,4 @@
-name: Recovery Build
+name: TWRP Recovery Build
 
 on:
   workflow_dispatch:
@@ -18,19 +18,19 @@ on:
       DEVICE_TREE_URL:
         description: Device Tree URL
         required: true
-        default: https://github.com/TeamWin/android_device_asus_I003D
+        default: https://github.com/hipexscape/device_xiaomi_sky-recovery/tree/TWRP
       DEVICE_TREE_BRANCH:
         description: Device Tree Branch
         required: true
-        default: android-12.1
+        default: TWRP
       DEVICE_PATH:
         description: Path the device tree should be synced to, relative to source root
         required: true
-        default: device/asus/I003D
+        default: device/xiaomi/sky
       DEVICE_NAME:
         description: Device Name from tree (should match name on twrp_<DEVICE_NAME>.mk)
         required: true
-        default: I003D
+        default: sky
       REPOPICK_PATCHES:
         description: (Optional) Gerrit commit numbers separated by a space to be included in the build (leave blank if not using)
         type: string
