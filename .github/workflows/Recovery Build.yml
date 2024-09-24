@@ -95,7 +95,7 @@ jobs:
       uses: haya14busa/action-cond@v1.2.1
       id: buildtree
       with:
-        cond: ${{ inputs.MANIFEST_BRANCH == '11' || inputs.MANIFEST_BRANCH == '12.1' }}
+        cond: ${{ inputs.MANIFEST_BRANCH == '11' || inputs.MANIFEST_BRANCH == '14' }}
         if_true: aosp
         if_false: omni
 
